@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mapa"
+            android:icon="@drawable/ic_map"
+            android:title="Mapa" />
+
+
+        <item
+            android:id="@+id/nav_horario"
+            android:title="Horario" >
+
+            <menu android:checkableBehavior="all" >
+                <item
+                    android:id="@+id/nav_lunes"
+                    android:icon="@drawable/ic_horario"
+                    android:title=" Lunes" />
+                <item
+                    android:id="@+id/nav_martes"
+                    android:icon="@drawable/ic_horario"
+                    android:title=" Martes" />
+                <item
+                    android:id="@+id/nav_miercoles"
+                    android:icon="@drawable/ic_horario"
+                    android:title=" Miercoles" />
+                <item
+                    android:id="@+id/nav_jueves"
+                    android:icon="@drawable/ic_horario"
+                    android:title=" Jueves" />
+
+                <item
+                    android:id="@+id/nav_viernes"
+                    android:icon="@drawable/ic_horario"
+                    android:title=" Viernes" />
+                <item
+                    android:id="@+id/nav_sabado"
+                    android:icon="@drawable/ic_horario"
+                    android:title=" Sabado" />
+
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_configuracion"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Configuración" />
+    </group>
+
+    <item android:title="Otros ">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Acerca de..." />
+            <item
+                android:id="@+id/nav_finseccion"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Finalizar Seccion" />
+        </menu>
+    </item>
+
+</menu>

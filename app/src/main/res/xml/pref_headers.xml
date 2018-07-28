@@ -1,0 +1,26 @@
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- These settings headers are only used on tablets. -->
+
+    <header
+        android:fragment="com.example.gustavo.pantallas.configuracion$GeneralPreferenceFragment"
+        android:icon="@drawable/ic_person"
+
+
+        android:title="Datos del Estudiante"
+        android:id="@+id/confi_dato_estudiante"/>
+
+    <header
+        android:fragment="com.example.gustavo.pantallas.configuracion$NotificationPreferenceFragment"
+
+        android:title="Horario"
+        android:id="@+id/confi_horario"/>
+
+    <header
+        android:fragment="com.example.gustavo.pantallas.configuracion$DataSyncPreferenceFragment"
+        android:icon="@drawable/ic_sync_black_24dp"
+        android:title="Otros"
+        android:id="@+id/confi_otros"
+        />
+
+</preference-headers>

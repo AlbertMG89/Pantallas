@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gustavo.pantallas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application android:theme="@style/AppTheme">
+        <activity
+            android:name=".splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".Registro"
+            android:parentActivityName=".Login"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+
+        <activity android:name=".Auxiliar"
+            android:parentActivityName=".Principal"
+            android:label="Mapa"/>
+
+
+
+        <activity
+            android:name=".Principal"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".configuracion"
+            android:label="@string/title_activity_configuracion"
+            android:parentActivityName=".Principal" />
+
+
+        <activity android:name=".Horarios"
+            android:parentActivityName=".Principal"
+            android:label="Horarios"/>
+
+
+        <activity
+            android:name=".crear_materia"
+            android:label="Agregar Materia"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+
+
+
+
+
+
+    </application>
+
+</manifest>
